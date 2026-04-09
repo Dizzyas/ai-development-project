@@ -1,0 +1,12 @@
+agents:
+  trae:
+    type: local
+    role: orchestrator  # 总指挥
+  openclaw:
+    type: acp
+    endpoint: http://localhost:8787  # OpenClaw ACP 端口
+    role: executor     # 执行复杂命令/部署
+  claude_code:
+    type: claude
+    api_key: sk-ant-xxx  # 你的 Claude API Key
+    role: coder      # 写深度代码
